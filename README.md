@@ -2,7 +2,7 @@
 
 A widget that makes picture pinch zoom, Instagram style!
 
-![](https://i.imgur.com/AkKX9qZ.gif)
+![Example App](https://dl.dropboxusercontent.com/s/db14bxw6xhcndr3/example.gif)
 
 ## Installation
 
