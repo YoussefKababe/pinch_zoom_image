@@ -46,7 +46,8 @@ class _PinchZoomImageState extends State<PinchZoomImage> {
               right: 0.0,
               bottom: 0.0,
               child: Container(
-                color: zooming ? widget.zoomedBackgroundColor : Colors.transparent,
+                color:
+                    zooming ? widget.zoomedBackgroundColor : Colors.transparent,
               ),
             ),
           ],

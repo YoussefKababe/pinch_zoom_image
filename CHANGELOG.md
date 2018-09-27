@@ -1,3 +1,3 @@
-## [0.0.2] - Sep 27
+## [0.1.1] - Sep 27
 
 * First release

@@ -1,6 +1,6 @@
 name: pinch_zoom_image
-description: A widget that makes picture pinch zoom, Instagram style!
-version: 0.0.2
+description: A widget that makes picture pinch zoom, then return back to initial size and position when released.
+version: 0.1.1
 author: Youssef Kababe <youssef.kbe@gmail.com>
 homepage: https://github.com/YoussefKababe/pinch_zoom_image
 

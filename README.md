@@ -2,14 +2,15 @@
 
 A widget that makes picture pinch zoom, Instagram style!
 
-![Example App](https://dl.dropboxusercontent.com/s/db14bxw6xhcndr3/example.gif)
+![Example one](https://dl.dropboxusercontent.com/s/ke7ms7oys45r2ja/example1.jpg)
+![Example two](https://dl.dropboxusercontent.com/s/ozo01jpv9xi5jqq/example2.jpg)
 
 ## Installation
 
 Add this to your `pubspec.yml` dependencies:
 
 ```
-pinch_zoom_image: "^0.0.2"
+pinch_zoom_image: "^0.1.1"
 ```
 
 ## How to use
