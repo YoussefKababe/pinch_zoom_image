@@ -1,0 +1,16 @@
+name: pinch_zoom_image_example
+description: A new Flutter project.
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pinch_zoom_image:
+    path: ../
+  cached_network_image: "^0.4.2"
+
+flutter:
+  assets:
+   - images/camel.jpg
