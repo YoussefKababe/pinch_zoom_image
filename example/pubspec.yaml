@@ -1,5 +1,6 @@
 name: pinch_zoom_image_example
-description: A new Flutter project.
+description: Demonstrates how to use the pinch_zoom_image plugin.
+version: 1.0.0+1
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
@@ -12,5 +13,6 @@ dependencies:
   cached_network_image: "^0.4.2"
 
 flutter:
+  uses-material-design: true
   assets:
    - images/camel.jpg

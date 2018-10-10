@@ -1,6 +1,6 @@
 # pinch_zoom_image_example
 
-A new Flutter project.
+Demonstrates how to use the pinch_zoom_image plugin.
 
 ## Getting Started
 
