@@ -10,7 +10,7 @@ A widget that makes picture pinch zoom, Instagram style!
 Add this to your `pubspec.yml` dependencies:
 
 ```
-pinch_zoom_image: "^0.2.1"
+pinch_zoom_image: "^0.2.2"
 ```
 
 ## How to use
