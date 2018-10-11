@@ -1,4 +1,4 @@
-## [0.2.0] - Oct 11
+## [0.2.1] - Oct 11
 
 * Turn package into plugin
 * Dim and show status bar using native platform code
