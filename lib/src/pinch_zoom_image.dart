@@ -16,6 +16,7 @@ class PinchZoomImage extends StatefulWidget {
 }
 
 class _PinchZoomImageState extends State<PinchZoomImage> {
+  static const channel = const MethodChannel('pinch_zoom_image');
   OverlayEntry overlayEntry;
   Offset scaleStartPosition;
   Offset origin;
@@ -61,7 +62,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> {
     setState(() {
       zooming = true;
     });
-    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
+    channel.invokeMethod('hideStatusBar');
     OverlayState overlayState = Overlay.of(context);
     double width = context.size.width;
     double height = context.size.height;
@@ -96,7 +97,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> {
   void _handleScaleEnd(ScaleEndDetails details) async {
     if (reversing || !zooming) return;
     reversing = true;
-    SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
+    channel.invokeMethod('showStatusBar');
     await overlayKey?.currentState?.reverse();
     overlayEntry?.remove();
     overlayEntry = null;
