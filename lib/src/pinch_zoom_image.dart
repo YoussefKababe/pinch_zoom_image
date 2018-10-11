@@ -5,10 +5,12 @@ import 'package:pinch_zoom_image/src/pinch_zoom_overlay_image.dart';
 class PinchZoomImage extends StatefulWidget {
   final Image image;
   final Color zoomedBackgroundColor;
+  final bool hideStatusBarWhileZooming;
 
   PinchZoomImage({
     @required this.image,
     this.zoomedBackgroundColor = Colors.transparent,
+    this.hideStatusBarWhileZooming = false,
   });
 
   @override
@@ -62,7 +64,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> {
     setState(() {
       zooming = true;
     });
-    channel.invokeMethod('hideStatusBar');
+    if (widget.hideStatusBarWhileZooming) channel.invokeMethod('hideStatusBar');
     OverlayState overlayState = Overlay.of(context);
     double width = context.size.width;
     double height = context.size.height;
@@ -97,7 +99,7 @@ class _PinchZoomImageState extends State<PinchZoomImage> {
   void _handleScaleEnd(ScaleEndDetails details) async {
     if (reversing || !zooming) return;
     reversing = true;
-    channel.invokeMethod('showStatusBar');
+    if (widget.hideStatusBarWhileZooming) channel.invokeMethod('showStatusBar');
     await overlayKey?.currentState?.reverse();
     overlayEntry?.remove();
     overlayEntry = null;

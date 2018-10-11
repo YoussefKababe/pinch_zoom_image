@@ -21,6 +21,7 @@ Add the widget to your app like this (It automatically takes the size of the ima
 PinchZoomImage(
   image: Image.network('https://i.imgur.com/tKg0XEb.jpg'),
   zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
+  hideStatusBarWhileZooming: true,
 ),
 ```
 
@@ -34,6 +35,7 @@ PinchZoomImage(
     image: CachedNetworkImageProvider('https://i.imgur.com/tKg0XEb.jpg'),
   ),
   zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
+  hideStatusBarWhileZooming: true,
 ),
 ```
 
