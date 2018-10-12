@@ -1,3 +1,7 @@
+## [0.2.3] - Oct 12
+
+* Make package accept any widget as image (Make it easy to work with packages like cached_network_image)
+
 ## [0.2.2] - Oct 11
 
 * Turn package into plugin

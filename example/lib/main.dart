@@ -23,14 +23,14 @@ class MyApp extends StatelessWidget {
               child: PinchZoomImage(
                 image: Image.asset('images/camel.jpg'),
                 zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
+                hideStatusBarWhileZooming: true,
               ),
             ),
             Container(
               padding: EdgeInsets.all(16.0),
               child: PinchZoomImage(
-                image: Image(
-                  image: CachedNetworkImageProvider(
-                      'https://i.imgur.com/tKg0XEb.jpg'),
+                image: CachedNetworkImage(
+                  imageUrl: 'https://i.imgur.com/tKg0XEb.jpg',
                 ),
                 zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
               ),

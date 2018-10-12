@@ -7,7 +7,7 @@ class PinchZoomOverlayImage extends StatefulWidget {
   final Offset origin;
   final double width;
   final double height;
-  final Image image;
+  final Widget image;
 
   PinchZoomOverlayImage({
     this.key,

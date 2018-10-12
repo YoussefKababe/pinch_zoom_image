@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:pinch_zoom_image/src/pinch_zoom_overlay_image.dart';
 
 class PinchZoomImage extends StatefulWidget {
-  final Image image;
+  final Widget image;
   final Color zoomedBackgroundColor;
   final bool hideStatusBarWhileZooming;
 

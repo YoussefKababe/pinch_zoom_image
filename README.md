@@ -10,7 +10,7 @@ A widget that makes picture pinch zoom, Instagram style!
 Add this to your `pubspec.yml` dependencies:
 
 ```
-pinch_zoom_image: "^0.2.2"
+pinch_zoom_image: "^0.2.3"
 ```
 
 ## How to use
@@ -31,8 +31,8 @@ If you want images from internet to be cached for offline use or data saving, yo
 
 ```dart
 PinchZoomImage(
-  image: Image(
-    image: CachedNetworkImageProvider('https://i.imgur.com/tKg0XEb.jpg'),
+  image: CachedNetworkImage(
+    imageUrl: 'https://i.imgur.com/tKg0XEb.jpg',
   ),
   zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
   hideStatusBarWhileZooming: true,
