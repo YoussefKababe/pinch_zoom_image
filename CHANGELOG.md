@@ -1,3 +1,7 @@
+## [0.2.4] - Oct 12
+
+* Add onZoomStart and onZoomEnd events callbacks
+
 ## [0.2.3] - Oct 12
 
 * Make package accept any widget as image (Make it easy to work with packages like cached_network_image)

@@ -24,6 +24,12 @@ class MyApp extends StatelessWidget {
                 image: Image.asset('images/camel.jpg'),
                 zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
                 hideStatusBarWhileZooming: true,
+                onZoomStart: () {
+                  print('Zoom started');
+                },
+                onZoomEnd: () {
+                  print('Zoom finished');
+                },
               ),
             ),
             Container(

@@ -10,7 +10,7 @@ A widget that makes picture pinch zoom, Instagram style!
 Add this to your `pubspec.yml` dependencies:
 
 ```
-pinch_zoom_image: "^0.2.3"
+pinch_zoom_image: "^0.2.4"
 ```
 
 ## How to use
@@ -22,6 +22,12 @@ PinchZoomImage(
   image: Image.network('https://i.imgur.com/tKg0XEb.jpg'),
   zoomedBackgroundColor: Color.fromRGBO(240, 240, 240, 1.0),
   hideStatusBarWhileZooming: true,
+  onZoomStart: () {
+    print('Zoom started');
+  },
+  onZoomEnd: () {
+    print('Zoom finished');
+  },
 ),
 ```
 
