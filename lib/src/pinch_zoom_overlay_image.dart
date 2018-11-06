@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' show lerpDouble;
-import 'dart:async';
 
 class PinchZoomOverlayImage extends StatefulWidget {
   final Key key;
@@ -77,7 +76,7 @@ class PinchZoomOverlayImageState extends State<PinchZoomOverlayImage>
     });
   }
 
-  Future<TickerFuture> reverse() {
+  TickerFuture reverse() {
     Offset origin = widget.origin;
     Offset reverseStartPosition = position;
     double reverseStartScale = scale;
