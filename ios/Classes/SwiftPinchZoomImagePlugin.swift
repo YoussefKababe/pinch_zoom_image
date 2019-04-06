@@ -10,10 +10,10 @@ public class SwiftPinchZoomImagePlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     if (call.method == "hideStatusBar") {
-        UIApplication.shared.keyWindow?.windowLevel = UIWindowLevelStatusBar
+        UIApplication.shared.keyWindow?.windowLevel = UIWindow.Level.statusBar
         result(nil)
     } else if (call.method == "showStatusBar") {
-        UIApplication.shared.keyWindow?.windowLevel = UIWindowLevelNormal
+        UIApplication.shared.keyWindow?.windowLevel = UIWindow.Level.normal
         result(nil)
     }
   }
