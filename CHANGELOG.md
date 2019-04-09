@@ -1,3 +1,7 @@
+## [0.2.6] - Apr 7
+
+* Kotlin/Swift upgrade
+
 ## [0.2.5] - Nov 6
 
 * Upgrade to Flutter 0.10.2 (Solves kotlin plugin version issue)
