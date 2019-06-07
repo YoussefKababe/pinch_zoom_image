@@ -15,7 +15,9 @@ class PinchZoomImagePlugin(private val activity: Activity) : MethodCallHandler {
     @JvmStatic
     fun registerWith(registrar: Registrar) {
       val channel = MethodChannel(registrar.messenger(), "pinch_zoom_image")
-      channel.setMethodCallHandler(PinchZoomImagePlugin(registrar.activity()))
+      if(registrar.activity() != null){ //Guard necessary for headless implementation 
+        channel.setMethodCallHandler(PinchZoomImagePlugin(registrar.activity()))
+      }
     }
   }
 
